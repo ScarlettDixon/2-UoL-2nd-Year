@@ -1,0 +1,27 @@
+subclass(mammal, animal).
+subclass(reptile, animal).
+haspart(mammal, head).
+subclass(elephant, mammal).
+colour(elephant, grey).
+size(elephant, large).
+inst(nellie, elephant).
+inst(clyde, elephant).
+likes(nellie, apples).
+
+
+haspart(X, Part) :- subclass(X, Y), has-part(Y, Part).
+haspart(elephant, head) :- subclass(elephant, mammal), haspart(mammal, head).
+colour(X, Col) :- inst(X, Y), colour(Y, Col).
+colour(Clyde, grey) :- inst(Clyde, elephant), colour(elephant, grey).
+size(X, S) :- inst(X,Y), size(Y,S).
+size(nellie, large) :- inst(nellie, elephant), size(elephant,large).
+
+instance(nellie, elephant).
+instance(clyde, elephant).
+subclass(elephant, mammal).
+subclass(mammal, animal).
+subclass(reptile, animal).
+colour(elephant, grey).
+size(elephant, large).
+likes(nellie, apples).
+haspart(mammal, head).

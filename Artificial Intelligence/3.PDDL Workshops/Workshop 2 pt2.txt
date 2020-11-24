@@ -1,0 +1,147 @@
+;;Domain template 2 for cleaning floor regions
+;; A domain file for CMP2020M assignment 2017/2018
+
+;; Define the name for this domain (needs to match the domain definition
+;; in the problem files)
+
+(define (domain domain-template2)
+
+	;; We only require some typing to make this plan faster. We can do without!
+	(:requirements :typing)
+
+	;; We have two types: cleaners and the regions, both are objects
+	(:types cleaner region - object)
+
+	;; define all the predicates as they are used in the problem files
+	(:predicates  
+
+    ;; described what region a cleaner is at
+    (cleaner-at ?c - cleaner ?x - region)
+
+    ;; described a region ?x is clear (no cleaner is at that region)
+    (region_clear ?x - region)
+
+    ;; indicates that region ?x is above region ?y
+    (above ?x - region ?y - region)
+
+    ;; indicates that region ?x is below region ?y
+    (below ?x - region ?y - region)
+
+    ;; indicates that region ?x is right of region ?y
+    (right ?x - region ?y - region)
+
+    ;; indicates that region ?x is left of region ?y
+    (left ?x - region ?y - region)
+    
+    ;; indicates that a region is cleaned
+    (cleaned ?x - region)
+
+;; indicates that a region is dirty
+    (dirty ?x - region)
+
+ 	)
+
+
+ (:action suck
+  :parameters (?r - cleaner ?x - region ?)
+  :precondition (and (dirty ?x) (cleaner-at ?r ?x))
+  :effect (and (cleaned ?x) (not(dirty ?x)))
+ )
+ (:action move_up
+  :parameters (?r - cleaner ?x ?x2 - region)
+  :precondition (and  (below ?x ?x2) (cleaner-at ?r ?x) 
+                      (region_clear ?x2))
+  :effect (and (cleaner-at ?r ?x2) (not(cleaner-at ?r ?x))
+               (region_clear ?x) (not(region_clear ?x2)))
+ )
+  (:action move_down
+  :parameters (?r - cleaner ?x ?x2 - region)
+  :precondition (and (above ?x ?x2) (cleaner-at ?r ?x)
+                     (region_clear ?x2))
+  :effect (and (cleaner-at ?r ?x2) (not(cleaner-at ?r ?x))
+               (region_clear ?x) (not(region_clear ?x2)))
+ )
+  (:action move_left
+  :parameters (?r - cleaner ?x ?x2 - region)
+  :precondition (and (right ?x ?x2) (cleaner-at ?r ?x)
+                    (region_clear ?x2) )
+  :effect (and (cleaner-at ?r ?x2) (not(cleaner-at ?r ?x))
+               (region_clear ?x) (not(region_clear ?x2)))
+ )
+  (:action move_right
+  :parameters (?r - cleaner ?x ?x2 - region)
+  :precondition (and (left ?x ?x2) (cleaner-at ?r ?x)
+                     (region_clear ?x2))
+  :effect (and (cleaner-at ?r ?x2) (not(cleaner-at ?r ?x))
+               (region_clear ?x) (not(region_clear ?x2)))
+ )
+)
+
+(define (problem cleaning-problem2)
+ (:domain domain-template2)
+ (:objects  region_0-1 region_0-2 region_0-3 
+           region_1-1 region_1-2  region_1-3 
+          region_2-1 region_2-2  region_2-3 - region
+           cleaner1 cleaner2 - cleaner
+)
+ (:init 
+   (cleaner-at cleaner1 region_1-1)
+   (cleaner-at cleaner2 region_1-3)
+   (region_clear region_0-1)
+   (region_clear region_0-2)
+   (region_clear region_0-3)
+   (region_clear region_1-2)
+   (region_clear region_2-1)
+   (region_clear region_2-2)
+   (region_clear region_2-3)
+
+   (above region_0-1 region_1-1)
+   (above region_0-2 region_1-2)
+   (above region_0-3 region_1-3)
+   (below region_1-1 region_0-1)
+   (below region_1-2 region_0-2)
+   (below region_1-3 region_0-3)
+
+   (above region_1-1 region_2-1)
+   (above region_1-2 region_2-2)
+   (above region_1-3 region_2-3)
+   (below region_2-1 region_1-1)
+   (below region_2-2 region_1-2)
+   (below region_2-3 region_1-3)
+
+   (right region_0-2 region_0-1)
+   (right region_0-3 region_0-2)
+   (right region_1-2 region_1-1)
+   (right region_1-3 region_1-2)
+   (right region_2-2 region_2-1)
+   (right region_2-3 region_2-2)
+
+   (left region_0-1 region_0-2)
+   (left region_0-2 region_0-3)
+   (left region_1-1 region_1-2)
+   (left region_1-2 region_1-3)
+   (left region_2-1 region_2-2)
+   (left region_2-2 region_2-3)
+   (dirty region_0-1)
+   (dirty region_0-2)
+   (dirty region_0-3)
+   (dirty region_1-1)
+   (dirty region_1-2)
+   (dirty region_1-3)
+   (dirty region_2-1)
+   (dirty region_2-2)
+   (dirty region_2-3)
+ 
+)
+ (:goal (and
+    (cleaned region_0-1)
+    (cleaned region_0-2)
+    (cleaned region_0-3)
+    (cleaned region_1-1)
+    (cleaned region_1-2)
+    (cleaned region_1-3)
+    (cleaned region_2-1)
+    (cleaned region_2-2)
+    (cleaned region_2-3)
+))
+)

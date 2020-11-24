@@ -1,0 +1,30 @@
+Image taken from: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0219911 seconds
+Number of times zoomed: 1
+Image taken from: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0851666 seconds
+Number of times zoomed: 2
+Image taken from: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.33885 seconds
+Number of times zoomed: 4
+Image taken from: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0221904 seconds
+Number of times zoomed: 1
+Image taken from: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0886334 seconds
+Number of times zoomed: 2
+Image taken from: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.348823 seconds
+Number of times zoomed: 4

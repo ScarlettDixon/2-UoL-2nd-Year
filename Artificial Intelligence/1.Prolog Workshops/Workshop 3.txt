@@ -1,0 +1,68 @@
+bird(X):- vertebrate(X), feathered(X).
+
+vertebrate(cat).
+vertebrate(kestrel).
+vertebrate(dog).
+feathered(pillow).
+feathered(kestrel). 
+
+
+event(battle_of_hastings, 1066).
+event(plague_of_london, 1665).
+event(fire_of_london, 1666).
+event(man_on_the_moon, 1969).
+event(falcon_heavy_rocket_launch, 2018).
+event(aaaaaa, 2019).
+happened_before(X, Y) :- event(X, Y),(Y < 1960).
+/**event(d,y) :- event(_,Date),(Date < 1960).**/
+
+/**person(tom, _, _, _,_).
+person(dave,_,_,_,_).**/
+person(jane, 3, hard_worker, ld,_).
+person(pete, 1, hard_worker, dd, lt).
+person(sam, 3, _, dd, lt).
+person(nigel, 1, hard_worker, _, _).
+
+
+dave_likes(X) :- person(X, Y, Z,_,_), (Y = 1), (Z = hard_worker).
+tom_dislikes(X) :- person(X, Y, _, Z,_), (Y = 3), (Z = ld).
+/**tom_likes(X) :- not(tom_dislikes(X)).**/
+
+car(ford,fiesta,popular,uk,950,hatchback,5300).
+car(ford,orion,gl,uk,1300,saloon,7800).
+car(ford,orion,gl,uk,1600,saloon,8600).
+car(ford,orion,ghia,uk,1600,saloon,9500).
+car(fiat,uno,55,italy,950,hatchback,5200).
+car(fiat,uno,70,italy,1050,hatchback,6500).
+car(rover,metro,city,uk,1000,hatchback,4900).
+car(rover,metro,mg,uk,1300,hatchback,5700). 
+car(ford, capri, injection,uk, 2800, sports, 11200).
+car(alfa_romeo, sprint, veloce, italy, 2000, coupe, 12500).
+car(volvo, 928, gls, sweden, 1400, hatchback, 6290).
+car(mitsubishi, colt, glx, japan, 1800, estate, 7420).
+car(mercedes, roadster, 280, germany, 2800, convertible, 18450).
+
+supplier(ford,uk,'21 Tinsgate, Dagenham','081 233 4821').
+supplier(rover,uk,'18 Beadle Road, Cowley','0325 24112').
+supplier(fiat,italy,'333 Via Alphonse, Turin','0101 888
+376 3983').
+
+type_point(estate, 1).
+type_point(saloon, 2).
+type_point(hatchback, 1).
+type_point(sports, 3).
+type_point(coupe, 5).
+type_point(convertible, 7).
+
+risk_for_capacity(Capacity, 1):- Capacity < 1000.
+risk_for_capacity(Capacity, 2):- Capacity >= 1000, Capacity < 1300.
+risk_for_capacity(Capacity, 3):- Capacity >= 1300, Capacity < 1500.
+risk_for_capacity(Capacity, 4):- Capacity >= 1500, Capacity < 2000.
+risk_for_capacity(Capacity, 5):- Capacity >= 2000, Capacity < 3500.
+risk_for_capacity(Capacity, 6):- Capacity >= 3500. 
+
+total_points(Mk, Mod, Total) :- 
+    car(Mk, Mod, _, _, Cap, Type, _), 
+    type_point(Type, Y), 
+    risk_for_capacity(Cap, Z),
+	(Total is (Y + Z)).

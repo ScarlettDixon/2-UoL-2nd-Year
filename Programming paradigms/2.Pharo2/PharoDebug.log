@@ -1,0 +1,2906 @@
+THERE_BE_DRAGONS_HERE
+Instance of LOGame did not understand #cellsPerSide
+23 February 2018 3:03:01.622027 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2254 uuid: 4f2c2cce-f4a2-469a-93f1-97ed941df0ad Jul 20 2017
+StackToRegisterMappingCogit VMMaker.oscog-eem.2252 uuid: 2f3e9b0e-ecd3-4adf-b092-cce2e2587a5c Jul 20 2017
+VM: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Thu Jul 20 12:42:21 2017 -0700 $ Plugins: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+
+Image: Pharo6.0 [Latest update: #60534]
+
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+	Receiver: a LOGame(248232448)
+	Arguments and temporary variables: 
+		aMessage: 	cellsPerSide
+		exception: 	MessageNotUnderstood: LOGame>>cellsPerSide
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(905117184)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (605973248)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(905117184)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame>>initialize
+	Receiver: a LOGame(248232448)
+	Arguments and temporary variables: 
+		sampleCell: 	nil
+		width: 	nil
+		height: 	nil
+		n: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(905117184)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (605973248)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(905117184)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame class(Behavior)>>new
+	Receiver: LOGame
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	SimpleSwitchMorph
+		methodDict: 	a MethodDictionary(#initialize->LOGame>>#initialize )
+		format: 	65553
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGame
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'LOGame new.'
+		itsSelection: 	a Text for 'LOGame new.'
+		itsSelectionString: 	'LOGame new.'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ LOGame new
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result |  ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+text...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(835393280))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	[ textMorph textArea
+	handleEdit: [ textMorph textArea editor high...etc...
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(498892288))(a DropList...etc...
+		lastStepTime: 	3615373
+		lastStepMessage: 	nil
+		lastCycleTime: 	3615394
+		alarms: 	a Heap()
+		lastAlarmTime: 	3615373
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a GLMSystemWindow(883164160) a Sy...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(498892288))(a DropList...etc...
+		lastStepTime: 	3615373
+		lastStepMessage: 	nil
+		lastCycleTime: 	3615394
+		alarms: 	a Heap()
+		lastAlarmTime: 	3615373
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(498892288))(a DropList...etc...
+		lastStepTime: 	3615373
+		lastStepMessage: 	nil
+		lastCycleTime: 	3615394
+		alarms: 	a Heap()
+		lastAlarmTime: 	3615373
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneSubCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		currentHand: 	a HandMorph(58125568)
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(498892288))(a DropList...etc...
+		lastStepTime: 	3615373
+		lastStepMessage: 	nil
+		lastCycleTime: 	3615394
+		alarms: 	a Heap()
+		lastAlarmTime: 	3615373
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>doOneSubCycle
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a GLMSystemWindow(883164160) a Sy...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+	Receiver: a MenuMorph(726384384)
+	Arguments and temporary variables: 
+		aPoint: 	(55@123.0)
+		aWorld: 	a WorldMorph(562956288) [world]
+		aBoolean: 	true
+		w: 	a WorldMorph(562956288) [world]
+		originalFocusHolder: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		bounds: 	(53.0@115.0) corner: (260.0@349.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(860788736)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(53.0@115.0) corner: (260.0@349.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (1015360256) [other:  (basicColor -> Color veryDark...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(754573568)'Do it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal:
+	Receiver: a MenuMorph(726384384)
+	Arguments and temporary variables: 
+		allowKeyboardControl: 	true
+	Receiver's instance variables: 
+		bounds: 	(53.0@115.0) corner: (260.0@349.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(860788736)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(53.0@115.0) corner: (260.0@349.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (1015360256) [other:  (basicColor -> Color veryDark...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(754573568)'Do it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal
+	Receiver: a MenuMorph(726384384)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(53.0@115.0) corner: (260.0@349.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(860788736)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(53.0@115.0) corner: (260.0@349.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (1015360256) [other:  (basicColor -> Color veryDark...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(754573568)'Do it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		shiftKeyState: 	false
+		menu: 	a MenuMorph(726384384)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(835393280))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		evt: 	[(18@36) mouseDown yellow 254904281 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(835393280))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleMouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(835393280))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(18@36) mouseDown yellow 254904281 nil]
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		timeStamp: 	254904281
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(18@36)
+		handler: 	a RubEditingArea(306306048)
+		wasHandled: 	true
+		whichButton: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(835393280))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MorphicEventDispatcher>>dispatchMouseDown:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+		aMorph: 	a RubEditingArea(306306048)
+		globalPt: 	(18@36)
+		localEvt: 	[(18@36) mouseDown yellow 254904281 nil]
+		index: 	3
+		child: 	a RubPrimarySelectionMorph(1001677824)
+		morphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(327951872))...etc...
+		handler: 	a RubEditingArea(306306048)
+		inside: 	false
+		lastHandler: 	a RubScrolledTextMorph(323698432)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleMouseDown:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(18@36) mouseDown yellow 254904281 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	254904281
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(18@36)
+		handler: 	a RubEditingArea(306306048)
+		wasHandled: 	true
+		whichButton: 	2
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+		aMorph: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+		aMorph: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+RubEditingArea(Morph)>>processEvent:using:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(18@36) mouseDown yellow 254904281 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(835393280))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MorphicEventDispatcher>>dispatchMouseDown:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(55@123) mouseDown yellow 254904281 nil]
+		aMorph: 	a TransformWithLayoutMorph(569326848)
+		globalPt: 	(55@123)
+		localEvt: 	[(18@36) mouseDown yellow 254904281 nil]
+		index: 	1
+		child: 	a RubEditingArea(306306048)
+		morphs: 	an Array(a RubEditingArea(306306048))
+		handler: 	nil
+		inside: 	nil
+		lastHandler: 	a RubScrolledTextMorph(323698432)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleMouseDown:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(55@123) mouseDown yellow 254904281 nil]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(55@123) mouseDown yellow 254904281 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	254904281
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(55@123)
+		handler: 	a RubScrolledTextMorph(323698432)
+		wasHandled: 	false
+		whichButton: 	2
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(55@123) mouseDown yellow 254904281 nil]
+		aMorph: 	a TransformWithLayoutMorph(569326848)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(55@123) mouseDown yellow 254904281 nil]
+		aMorph: 	a TransformWithLayoutMorph(569326848)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+TransformWithLayoutMorph(Morph)>>processEvent:using:
+	Receiver: a TransformWithLayoutMorph(569326848)
+	Arguments and temporary variables: 
+		anEvent: 	[(55@123) mouseDown yellow 254904281 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(37@87) corner: (617@417)
+		owner: 	a RubTextScrollPane(634540800)
+		submorphs: 	an Array(a RubEditingArea(306306048))
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (470097408) [other:  (kmDispatcher -> a KMDispatche...etc...
+		transform: 	a MorphicTransform(angle = 0.0; scale = 1.0; offset = (-37@ -87))
+		smoothing: 	1
+		localBounds: 	nil
+
+
+MorphicEventDispatcher>>dispatchMouseDown:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(55@123) mouseDown yellow 254904281 nil]
+		aMorph: 	a RubTextScrollPane(634540800)
+		globalPt: 	(55@123)
+		localEvt: 	[(55@123) mouseDown yellow 254904281 nil]
+		index: 	1
+		child: 	a TransformWithLayoutMorph(569326848)
+		morphs: 	an Array(a TransformWithLayoutMorph(569326848))
+		handler: 	nil
+		inside: 	nil
+		lastHandler: 	a RubScrolledTextMorph(323698432)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+
+--- The full stack ---
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+LOGame>>initialize
+LOGame class(Behavior)>>new
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldState>>doOneSubCycleFor:
+WorldMorph>>doOneSubCycle
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+MenuMorph>>invokeModal:
+MenuMorph>>invokeModal
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+RubEditingArea(Morph)>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubEditingArea(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+TransformWithLayoutMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubTextScrollPane(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubScrolledTextMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPanelMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+LazyTabGroupMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPanelMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMMorphBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMScrollPaneBandBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPagerScrollBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPagerBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMFoundationBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMSystemWindow(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+WorldMorph(Morph)>>processEvent:using:
+WorldMorph(Morph)>>processEvent:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :h | 
+self activeHand: h.
+h processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Instance of LOGame did not understand #cellsPerSide
+23 February 2018 3:03:08.607027 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2254 uuid: 4f2c2cce-f4a2-469a-93f1-97ed941df0ad Jul 20 2017
+StackToRegisterMappingCogit VMMaker.oscog-eem.2252 uuid: 2f3e9b0e-ecd3-4adf-b092-cce2e2587a5c Jul 20 2017
+VM: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Thu Jul 20 12:42:21 2017 -0700 $ Plugins: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+
+Image: Pharo6.0 [Latest update: #60534]
+
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+	Receiver: a LOGame(672828672)
+	Arguments and temporary variables: 
+		aMessage: 	cellsPerSide
+		exception: 	MessageNotUnderstood: LOGame>>cellsPerSide
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(658224128)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (11175424)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(658224128)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame>>initialize
+	Receiver: a LOGame(672828672)
+	Arguments and temporary variables: 
+		sampleCell: 	nil
+		width: 	nil
+		height: 	nil
+		n: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(658224128)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (11175424)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(658224128)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame class(Behavior)>>new
+	Receiver: LOGame
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	SimpleSwitchMorph
+		methodDict: 	a MethodDictionary(#initialize->LOGame>>#initialize )
+		format: 	65553
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGame
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+THERE_BE_DRAGONS_HERE
+Instance of LOGame did not understand #cellsPerSide
+23 February 2018 3:04:43.714027 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2254 uuid: 4f2c2cce-f4a2-469a-93f1-97ed941df0ad Jul 20 2017
+StackToRegisterMappingCogit VMMaker.oscog-eem.2252 uuid: 2f3e9b0e-ecd3-4adf-b092-cce2e2587a5c Jul 20 2017
+VM: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Thu Jul 20 12:42:21 2017 -0700 $ Plugins: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+
+Image: Pharo6.0 [Latest update: #60534]
+
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+	Receiver: a LOGame(239774464)
+	Arguments and temporary variables: 
+		aMessage: 	cellsPerSide
+		exception: 	MessageNotUnderstood: LOGame>>cellsPerSide
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(136619776)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (510437888)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(136619776)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame>>initialize
+	Receiver: a LOGame(239774464)
+	Arguments and temporary variables: 
+		sampleCell: 	nil
+		width: 	nil
+		height: 	nil
+		n: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(136619776)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (510437888)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(136619776)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame class(Behavior)>>new
+	Receiver: LOGame
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	SimpleSwitchMorph
+		methodDict: 	a MethodDictionary(#initialize->LOGame>>#initialize )
+		format: 	65553
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGame
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'LOGame new.'
+		itsSelection: 	a Text for 'LOGame new.'
+		itsSelectionString: 	'LOGame new.'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ LOGame new
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result inspect ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+text...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(152224768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	[ textMorph textArea
+	handleEdit: [ textMorph textArea editor high...etc...
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(790533376))(a FadingMorp...etc...
+		lastStepTime: 	3717459
+		lastStepMessage: 	nil
+		lastCycleTime: 	3717480
+		alarms: 	a Heap()
+		lastAlarmTime: 	3717459
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a FadingMorph(790533376) a GLMSys...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(790533376))(a FadingMorp...etc...
+		lastStepTime: 	3717459
+		lastStepMessage: 	nil
+		lastCycleTime: 	3717480
+		alarms: 	a Heap()
+		lastAlarmTime: 	3717459
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(790533376))(a FadingMorp...etc...
+		lastStepTime: 	3717459
+		lastStepMessage: 	nil
+		lastCycleTime: 	3717480
+		alarms: 	a Heap()
+		lastAlarmTime: 	3717459
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneSubCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		currentHand: 	a HandMorph(58125568)
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(790533376))(a FadingMorp...etc...
+		lastStepTime: 	3717459
+		lastStepMessage: 	nil
+		lastCycleTime: 	3717480
+		alarms: 	a Heap()
+		lastAlarmTime: 	3717459
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>doOneSubCycle
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a FadingMorph(790533376) a GLMSys...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+	Receiver: a MenuMorph(661647360)
+	Arguments and temporary variables: 
+		aPoint: 	(76@127.0)
+		aWorld: 	a WorldMorph(562956288) [world]
+		aBoolean: 	true
+		w: 	a WorldMorph(562956288) [world]
+		originalFocusHolder: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		bounds: 	(74.0@119.0) corner: (281.0@353.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(254044160)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(74.0@119.0) corner: (281.0@353.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (13389056) [other:  (basicColor -> Color veryDarkGr...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(921475840)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal:
+	Receiver: a MenuMorph(661647360)
+	Arguments and temporary variables: 
+		allowKeyboardControl: 	true
+	Receiver's instance variables: 
+		bounds: 	(74.0@119.0) corner: (281.0@353.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(254044160)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(74.0@119.0) corner: (281.0@353.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (13389056) [other:  (basicColor -> Color veryDarkGr...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(921475840)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal
+	Receiver: a MenuMorph(661647360)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(74.0@119.0) corner: (281.0@353.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(254044160)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(74.0@119.0) corner: (281.0@353.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (13389056) [other:  (basicColor -> Color veryDarkGr...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(921475840)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		shiftKeyState: 	false
+		menu: 	a MenuMorph(661647360)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(152224768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		evt: 	[(39@40) mouseDown yellow 255005437 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(152224768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleMouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(39@40) mouseDown yellow 255005437 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(152224768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(39@40) mouseDown yellow 255005437 nil]
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		timeStamp: 	255005437
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(39@40)
+		handler: 	a RubEditingArea(306306048)
+		wasHandled: 	true
+		whichButton: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: THERE_BE_DRAGONS_HERE
+Instance of LOGame did not understand #cellsPerSide
+23 February 2018 3:04:57.293027 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2254 uuid: 4f2c2cce-f4a2-469a-93f1-97ed941df0ad Jul 20 2017
+StackToRegisterMappingCogit VMMaker.oscog-eem.2252 uuid: 2f3e9b0e-ecd3-4adf-b092-cce2e2587a5c Jul 20 2017
+VM: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Thu Jul 20 12:42:21 2017 -0700 $ Plugins: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+
+Image: Pharo6.0 [Latest update: #60534]
+
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+	Receiver: a LOGame(209289216)
+	Arguments and temporary variables: 
+		aMessage: 	cellsPerSide
+		exception: 	MessageNotUnderstood: LOGame>>cellsPerSide
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(1019648512)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (314912512)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(1019648512)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame>>initialize
+	Receiver: a LOGame(209289216)
+	Arguments and temporary variables: 
+		sampleCell: 	nil
+		width: 	nil
+		height: 	nil
+		n: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(1019648512)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (314912512)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(1019648512)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame class(Behavior)>>new
+	Receiver: LOGame
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	SimpleSwitchMorph
+		methodDict: 	a MethodDictionary(#initialize->LOGame>>#initialize )
+		format: 	65553
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGame
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'LOGame new.'
+		itsSelection: 	a Text for 'LOGame new.'
+		itsSelectionString: 	'LOGame new.'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ LOGame new
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result inspect ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+text...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(456768768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	[ textMorph textArea
+	handleEdit: [ textMorph textArea editor high...etc...
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(732652800))(a FadingMorp...etc...
+		lastStepTime: 	3731051
+		lastStepMessage: 	nil
+		lastCycleTime: 	3731073
+		alarms: 	a Heap()
+		lastAlarmTime: 	3731051
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a FadingMorph(732652800) a GLMSys...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(732652800))(a FadingMorp...etc...
+		lastStepTime: 	3731051
+		lastStepMessage: 	nil
+		lastCycleTime: 	3731073
+		alarms: 	a Heap()
+		lastAlarmTime: 	3731051
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(732652800))(a FadingMorp...etc...
+		lastStepTime: 	3731051
+		lastStepMessage: 	nil
+		lastCycleTime: 	3731073
+		alarms: 	a Heap()
+		lastAlarmTime: 	3731051
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneSubCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		currentHand: 	a HandMorph(58125568)
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(732652800))(a FadingMorp...etc...
+		lastStepTime: 	3731051
+		lastStepMessage: 	nil
+		lastCycleTime: 	3731073
+		alarms: 	a Heap()
+		lastAlarmTime: 	3731051
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>doOneSubCycle
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a FadingMorph(732652800) a GLMSys...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+	Receiver: a MenuMorph(779898112)
+	Arguments and temporary variables: 
+		aPoint: 	(92@122.0)
+		aWorld: 	a WorldMorph(562956288) [world]
+		aBoolean: 	true
+		w: 	a WorldMorph(562956288) [world]
+		originalFocusHolder: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		bounds: 	(90.0@114.0) corner: (297.0@348.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(26254336)'Do it and go' a ToggleMenuI...etc...
+		fullBounds: 	(90.0@114.0) corner: (297.0@348.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (1022746112) [other:  (basicColor -> Color veryDark...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(596227840)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal:
+	Receiver: a MenuMorph(779898112)
+	Arguments and temporary variables: 
+		allowKeyboardControl: 	true
+	Receiver's instance variables: 
+		bounds: 	(90.0@114.0) corner: (297.0@348.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(26254336)'Do it and go' a ToggleMenuI...etc...
+		fullBounds: 	(90.0@114.0) corner: (297.0@348.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (1022746112) [other:  (basicColor -> Color veryDark...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(596227840)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal
+	Receiver: a MenuMorph(779898112)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(90.0@114.0) corner: (297.0@348.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(26254336)'Do it and go' a ToggleMenuI...etc...
+		fullBounds: 	(90.0@114.0) corner: (297.0@348.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (1022746112) [other:  (basicColor -> Color veryDark...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(596227840)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		shiftKeyState: 	false
+		menu: 	a MenuMorph(779898112)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(456768768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		evt: 	[(55@35) mouseDown yellow 255019375 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(456768768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleMouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(55@35) mouseDown yellow 255019375 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(456768768))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(55@35) mouseDown yellow 255019375 nil]
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		timeStamp: 	255019375
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(55@35)
+		handler: 	a RubEditingArea(306306048)
+		wasHandled: 	true
+		whichButton: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(306306048)THERE_BE_DRAGONS_HERE
+Instance of LOGame did not understand #cellsPerSide
+23 February 2018 3:05:37.424027 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2254 uuid: 4f2c2cce-f4a2-469a-93f1-97ed941df0ad Jul 20 2017
+StackToRegisterMappingCogit VMMaker.oscog-eem.2252 uuid: 2f3e9b0e-ecd3-4adf-b092-cce2e2587a5c Jul 20 2017
+VM: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Thu Jul 20 12:42:21 2017 -0700 $ Plugins: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+
+Image: Pharo6.0 [Latest update: #60534]
+
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+	Receiver: a LOGame(874633472)
+	Arguments and temporary variables: 
+		aMessage: 	cellsPerSide
+		exception: 	MessageNotUnderstood: LOGame>>cellsPerSide
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(439462144)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (845871104)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(439462144)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame>>initialize
+	Receiver: a LOGame(874633472)
+	Arguments and temporary variables: 
+		sampleCell: 	nil
+		width: 	nil
+		height: 	nil
+		n: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(439462144)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (845871104)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(439462144)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame class(Behavior)>>new
+	Receiver: LOGame
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	SimpleSwitchMorph
+		methodDict: 	a MethodDictionary(#initialize->LOGame>>#initialize )
+		format: 	65553
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGame
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'LOGame new.'
+		itsSelection: 	a Text for 'LOGame new.'
+		itsSelectionString: 	'LOGame new.'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ LOGame new
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result inspect ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(306306048)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+text...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(422929920))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(323698432)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	[ textMorph textArea
+	handleEdit: [ textMorph textArea editor high...etc...
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a SearchMorph(896270080))(a SearchMorp...etc...
+		lastStepTime: 	3771183
+		lastStepMessage: 	nil
+		lastCycleTime: 	3771205
+		alarms: 	a Heap()
+		lastAlarmTime: 	3771183
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a GLMSystemWindow(883164160) a Na...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a SearchMorph(896270080))(a SearchMorp...etc...
+		lastStepTime: 	3771183
+		lastStepMessage: 	nil
+		lastCycleTime: 	3771205
+		alarms: 	a Heap()
+		lastAlarmTime: 	3771183
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a SearchMorph(896270080))(a SearchMorp...etc...
+		lastStepTime: 	3771183
+		lastStepMessage: 	nil
+		lastCycleTime: 	3771205
+		alarms: 	a Heap()
+		lastAlarmTime: 	3771183
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneSubCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		currentHand: 	a HandMorph(58125568)
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1920@1017)
+		canvas: 	a FormCanvas on: DisplayScreen(1920x1017x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a SearchMorph(896270080))(a SearchMorp...etc...
+		lastStepTime: 	3771183
+		lastStepMessage: 	nil
+		lastCycleTime: 	3771205
+		alarms: 	a Heap()
+		lastAlarmTime: 	3771183
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>doOneSubCycle
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1920@1017)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a GLMSystemWindow(883164160) a Na...etc...
+		fullBounds: 	nil
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (48734464) [other:  (dragEnabled -> true) (dropEnab...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+	Receiver: a MenuMorph(1020206336)
+	Arguments and temporary variables: 
+		aPoint: 	(98@125.0)
+		aWorld: 	a WorldMorph(562956288) [world]
+		aBoolean: 	true
+		w: 	a WorldMorph(562956288) [world]
+		originalFocusHolder: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		bounds: 	(96.0@117.0) corner: (303.0@351.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(122033664)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(96.0@117.0) corner: (303.0@351.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (12559360) [other:  (basicColor -> Color veryDarkGr...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(8294912)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal:
+	Receiver: a MenuMorph(1020206336)
+	Arguments and temporary variables: 
+		allowKeyboardControl: 	true
+	Receiver's instance variables: 
+		bounds: 	(96.0@117.0) corner: (303.0@351.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(122033664)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(96.0@117.0) corner: (303.0@351.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (12559360) [other:  (basicColor -> Color veryDarkGr...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(8294912)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>invokeModal
+	Receiver: a MenuMorph(1020206336)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(96.0@117.0) corner: (303.0@351.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(122033664)'Do it and go' a ToggleMenu...etc...
+		fullBounds: 	(96.0@117.0) corner: (303.0@351.0)
+		color: 	Color veryDarkGray
+		extension: 	a MorphExtension (12559360) [other:  (basicColor -> Color veryDarkGr...etc...
+		borderWidth: 	1
+		borderColor: 	(Color r: 0.135 g: 0.135 b: 0.135 alpha: 1.0)
+		defaultTarget: 	nil
+		selectedItem: 	a ToggleMenuItemMorph(8294912)'Inspect it'
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		shiftKeyState: 	false
+		menu: 	a MenuMorph(1020206336)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(422929920))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		evt: 	[(61@38) mouseDown yellow 255059593 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(422929920))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleMouseDown:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(422929920))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(61@38) mouseDown yellow 255059593 nil]
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		timeStamp: 	255059593
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(61@38)
+		handler: 	a RubEditingArea(306306048)
+		wasHandled: 	true
+		whichButton: 	2
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(422929920))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MorphicEventDispatcher>>dispatchMouseDown:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+		aMorph: 	a RubEditingArea(306306048)
+		globalPt: 	(61@38)
+		localEvt: 	[(61@38) mouseDown yellow 255059593 nil]
+		index: 	3
+		child: 	a RubPrimarySelectionMorph(1001677824)
+		morphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(327951872))...etc...
+		handler: 	a RubEditingArea(306306048)
+		inside: 	false
+		lastHandler: 	a RubScrolledTextMorph(323698432)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleMouseDown:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(61@38) mouseDown yellow 255059593 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	255059593
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(61@38)
+		handler: 	a RubEditingArea(306306048)
+		wasHandled: 	true
+		whichButton: 	2
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+		aMorph: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+		aMorph: 	a RubEditingArea(306306048)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+RubEditingArea(Morph)>>processEvent:using:
+	Receiver: a RubEditingArea(306306048)
+	Arguments and temporary variables: 
+		anEvent: 	[(61@38) mouseDown yellow 255059593 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@50)
+		owner: 	a TransformWithLayoutMorph(569326848)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(1001677824) a RubCursor(32795187...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (73152256) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(634540800)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(327951872)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(422929920))
+		getMenuPolicy: 	a RubEditingArea(306306048)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+MorphicEventDispatcher>>dispatchMouseDown:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(98@125) mouseDown yellow 255059593 nil]
+		aMorph: 	a TransformWithLayoutMorph(569326848)
+		globalPt: 	(98@125)
+		localEvt: 	[(61@38) mouseDown yellow 255059593 nil]
+		index: 	1
+		child: 	a RubEditingArea(306306048)
+		morphs: 	an Array(a RubEditingArea(306306048))
+		handler: 	nil
+		inside: 	nil
+		lastHandler: 	a RubScrolledTextMorph(323698432)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleMouseDown:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(98@125) mouseDown yellow 255059593 nil]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(98@125) mouseDown yellow 255059593 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	255059593
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseDown
+		buttons: 	2
+		position: 	(98@125)
+		handler: 	a RubScrolledTextMorph(323698432)
+		wasHandled: 	false
+		whichButton: 	2
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(98@125) mouseDown yellow 255059593 nil]
+		aMorph: 	a TransformWithLayoutMorph(569326848)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(98@125) mouseDown yellow 255059593 nil]
+		aMorph: 	a TransformWithLayoutMorph(569326848)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+TransformWithLayoutMorph(Morph)>>processEvent:using:
+	Receiver: a TransformWithLayoutMorph(569326848)
+	Arguments and temporary variables: 
+		anEvent: 	[(98@125) mouseDown yellow 255059593 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(37@87) corner: (617@417)
+		owner: 	a RubTextScrollPane(634540800)
+		submorphs: 	an Array(a RubEditingArea(306306048))
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (470097408) [other:  (kmDispatcher -> a KMDispatche...etc...
+		transform: 	a MorphicTransform(angle = 0.0; scale = 1.0; offset = (-37@ -87))
+		smoothing: 	1
+		localBounds: 	nil
+
+
+MorphicEventDispatcher>>dispatchMouseDown:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(98@125) mouseDown yellow 255059593 nil]
+		aMorph: 	a RubTextScrollPane(634540800)
+		globalPt: 	(98@125)
+		localEvt: 	[(98@125) mouseDown yellow 255059593 nil]
+		index: 	1
+		child: 	a TransformWithLayoutMorph(569326848)
+		morphs: 	an Array(a TransformWithLayoutMorph(569326848))
+		handler: 	nil
+		inside: 	nil
+		lastHandler: 	a RubScrolledTextMorph(323698432)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+
+--- The full stack ---
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+LOGame>>initialize
+LOGame class(Behavior)>>new
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldState>>doOneSubCycleFor:
+WorldMorph>>doOneSubCycle
+MenuMorph>>invokeModalAt:in:allowKeyboard:
+MenuMorph>>invokeModal:
+MenuMorph>>invokeModal
+RubEditingArea(RubAbstractTextArea)>>yellowButtonActivity:
+RubEditingArea(RubAbstractTextArea)>>mouseDown:
+RubEditingArea(Morph)>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubEditingArea(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+TransformWithLayoutMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubTextScrollPane(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+RubScrolledTextMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPanelMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+LazyTabGroupMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPanelMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMMorphBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMScrollPaneBandBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPagerScrollBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMPagerBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMFoundationBrick(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+GLMSystemWindow(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchMouseDown:with:
+MorphicEventDispatcher>>handleMouseDown:
+MouseButtonEvent>>sentTo:
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+WorldMorph(Morph)>>processEvent:using:
+WorldMorph(Morph)>>processEvent:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :h | 
+self activeHand: h.
+h processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Instance of LOGame did not understand #cellsPerSide
+23 February 2018 3:05:54.589027 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2254 uuid: 4f2c2cce-f4a2-469a-93f1-97ed941df0ad Jul 20 2017
+StackToRegisterMappingCogit VMMaker.oscog-eem.2252 uuid: 2f3e9b0e-ecd3-4adf-b092-cce2e2587a5c Jul 20 2017
+VM: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Thu Jul 20 12:42:21 2017 -0700 $ Plugins: 201707201942 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+
+Image: Pharo6.0 [Latest update: #60534]
+
+LOGame(Object)>>doesNotUnderstand: #cellsPerSide
+	Receiver: a LOGame(302678016)
+	Arguments and temporary variables: 
+		aMessage: 	cellsPerSide
+		exception: 	MessageNotUnderstood: LOGame>>cellsPerSide
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(794663424)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (709242624)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(794663424)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame>>initialize
+	Receiver: a LOGame(302678016)
+	Arguments and temporary variables: 
+		sampleCell: 	nil
+		width: 	nil
+		height: 	nil
+		n: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (39@25)
+		owner: 	nil
+		submorphs: 	an Array(a StringMorph(794663424)'Flash')
+		fullBounds: 	nil
+		color: 	Color lightGray
+		extension: 	a MorphExtension (709242624)
+		borderWidth: 	3
+		borderColor: 	Color gray
+		target: 	nil
+		actionSelector: 	#flash
+		arguments: 	#()
+		actWhen: 	#buttonUp
+		oldColor: 	nil
+		label: 	a StringMorph(794663424)'Flash'
+		onColor: 	(Color r: 1.0 g: 0.6 b: 0.6 alpha: 1.0)
+		offColor: 	Color lightGray
+		cells: 	nil
+
+
+LOGame class(Behavior)>>new
+	Receiver: LOGame
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	SimpleSwitchMorph
+		methodDict: 	a MethodDictionary(#initialize->LOGame>>#initialize )
+		format: 	65553
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#LOGame
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PBE-LightsOut'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		announcer: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 

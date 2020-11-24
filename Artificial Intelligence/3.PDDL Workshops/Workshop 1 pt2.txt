@@ -1,0 +1,115 @@
+;;Domain;;
+(define (domain move)
+  (:requirements :strips :typing :action-costs :adl)
+   (:predicates 
+    (position ?p)
+	(blocks ?b)
+	(right ?p1 - position ?p2 - position)
+	(up ?p1 - position ?p2 - position)
+	(at ?b - blocks ?p - position)
+        (empty ?p - position))
+
+;; You need to define actions to solve the puzzle problem
+;; You need to define actions to solve the puzzle problem
+(:action mv_right
+         :parameters (?p1 ?p2 ?b1)
+         :precondition (and 
+                        (position ?p1) (position ?p2)
+                        (blocks ?b1)
+                        (at ?b1 ?p1) (empty ?p2) (right ?p2 ?p1)
+                       )
+         :effect (and (at ?b1 ?p2) (empty ?p1 ))
+         )
+  
+(:action mv_left
+         :parameters (?p1 ?p2 ?b1)
+         :precondition (and 
+                        (position ?p1) (position ?p2)
+                        (blocks ?b1)
+                        (at ?b1 ?p1) (empty ?p2) (right ?p1 ?p2)
+                       )
+         :effect (and (at ?b1 ?p2) (empty ?p1 ))
+)
+ (:action mv_up
+         :parameters (?p1 ?p2 ?b1)
+         :precondition (and 
+                        (position ?p1) (position ?p2)
+                        (blocks ?b1)
+                        (at ?b1 ?p1) (empty ?p2) (up ?p2 ?p1)
+                       )
+         :effect (and (at ?b1 ?p2) (empty ?p1 ))
+         )
+  
+(:action mv_down
+         :parameters (?p1 ?p2 ?b1)
+         :precondition (and 
+                        (position ?p1) (position ?p2)
+                        (blocks ?b1)
+                        (at ?b1 ?p1) (empty ?p2) (up ?p1 ?p2)
+                       )
+         :effect (and (at ?b1 ?p2) (empty ?p1 ))
+)
+)
+
+
+;;Problem;;
+
+(define (problem puzzle) 
+(:domain move)
+(:objects
+	P_1 P_2 P_3 P_4 P_5 P_6 P_7 P_8 P_9 -position
+	B_1 B_2 B_3 B_4 B_5 B_6 B_7 B_8 -blocks
+	)
+(:init
+	(at B_1 P_2)
+	(at B_2 P_5)
+	(at B_3 P_3)
+ 	(at B_4 P_4)
+	(at B_5 P_8)
+	(at B_6 P_6)
+ 	(at B_7 P_7)
+	(at B_8 P_9)
+ 	(position P_1)
+    (position P_2)
+ 	(position P_3)
+ 	(position P_4)
+    (position P_5)
+    (position P_6)
+ 	(position P_7)
+ 	(position P_8)
+ 	(position P_9)
+ 	(blocks B_1)
+ 	(blocks B_2)
+ 	(blocks B_3)
+ 	(blocks B_4)
+ 	(blocks B_5)
+ 	(blocks B_6)
+ 	(blocks B_7)
+ 	(blocks B_8)
+ 	(right P_2 P_1)
+ 	(right P_3 P_2)
+ 	(right P_5 P_4)
+ 	(right P_6 P_5)
+ 	(right P_8 P_7)
+ 	(right P_9 P_8)
+ 	(up P_1 P_4)
+ 	(up P_2 P_5)
+ 	(up P_3 P_6)
+ 	(up P_4 P_7)
+ 	(up P_5 P_8)
+ 	(up P_6 P_9)
+ 	(empty P_1)
+)
+
+(:goal (and
+		(at B_1 P_1)
+        (at B_2 P_2)
+        (at B_3 P_3)
+        (at B_4 P_4)
+        (at B_5 P_5)
+        (at B_6 P_6)
+        (at B_7 P_7)
+        (at B_8 P_8)
+        (empty P_9)
+	)
+))

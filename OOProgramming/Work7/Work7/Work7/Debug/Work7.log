@@ -1,0 +1,5 @@
+﻿  Task6Source.cpp
+d:\university work\year 2\ooprogramming\work7\work7\work7\task6source.cpp(11): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\university work\year 2\ooprogramming\work7\work7\work7\task6source.cpp(12): warning C4305: 'argument': truncation from 'double' to 'float'
+  Work7.vcxproj -> D:\University Work\Year 2\OOProgramming\Work7\Work7\Debug\Work7.exe
+  Work7.vcxproj -> D:\University Work\Year 2\OOProgramming\Work7\Work7\Debug\Work7.pdb (Partial PDB)

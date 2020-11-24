@@ -1,0 +1,1 @@
+LOCell new.LOGame new.

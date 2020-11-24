@@ -1,0 +1,64 @@
+File Name: Images/ReadPPM/IMG_1.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.308271 Seconds
+File Name: Images/ReadPPM/IMG_2.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.330277 Seconds
+File Name: Images/ReadPPM/IMG_3.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.303648 Seconds
+File Name: Images/ReadPPM/IMG_4.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.307639 Seconds
+File Name: Images/ReadPPM/IMG_5.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.311604 Seconds
+File Name: Images/ReadPPM/IMG_6.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.304186 Seconds
+File Name: Images/ReadPPM/IMG_7.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.305047 Seconds
+File Name: Images/ReadPPM/IMG_8.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.305434 Seconds
+File Name: Images/ReadPPM/IMG_9.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.310351 Seconds
+File Name: Images/ReadPPM/IMG_10.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.311424 Seconds
+File Name: Images/ReadPPM/IMG_11.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.325108 Seconds
+File Name: Images/ReadPPM/IMG_12.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.307229 Seconds
+File Name: Images/ReadPPM/IMG_13.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.310358 Seconds
+File Name: Images/WritePPM/Mean.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.308384 Seconds
+File Name: Images/WritePPM/Median.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.30406 Seconds
+File Name: Images/WritePPM/Sigma.ppm
+Image Dimensions: Width: 3264 Height: 2448
+colour depth: 255
+Time taken to read Image: 0.30317 Seconds

@@ -1,0 +1,7 @@
+﻿  Task1.cpp
+d:\university work\year 2\ooprogramming\work 3\work 3\task1.cpp(22): warning C4018: '<': signed/unsigned mismatch
+d:\university work\year 2\ooprogramming\work 3\work 3\task1.cpp(30): warning C4018: '<': signed/unsigned mismatch
+d:\university work\year 2\ooprogramming\work 3\work 3\task1.cpp(38): warning C4018: '<': signed/unsigned mismatch
+d:\university work\year 2\ooprogramming\work 3\work 3\task1.cpp(53): warning C4101: 'temp': unreferenced local variable
+  Work 3.vcxproj -> D:\University Work\Year 2\OOProgramming\Work 3\Debug\Work 3.exe
+  Work 3.vcxproj -> D:\University Work\Year 2\OOProgramming\Work 3\Debug\Work 3.pdb (Partial PDB)

@@ -1,0 +1,26 @@
+;;Test 1;;
+;;http://lcas.lincoln.ac.uk/fast-downward;;
+;; Google PDDL editor
+;;Domain;;
+
+(define (domain Test1)
+	(:requirements :typing)
+	(:types ball)
+  	(:predicates
+     	(has-thrown ?a)
+     	(in-hands ?a)
+     )
+  	(:action throw 
+        :parameters(?a)
+		:precondition (in-hands ?a)
+        :effect     (has-thrown ?a)
+    )
+)
+
+;;Problem;;
+(define (problem Isthrown)
+  (:domain Test1)
+  (:objects ball1 - ball)
+  (:init (in-hands ball1))
+  (:goal (has-thrown ball1))
+)

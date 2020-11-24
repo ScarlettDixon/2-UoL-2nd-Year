@@ -1,0 +1,285 @@
+Written to: Images/Zoom/zImg_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0274738
+Number of times zoomed: 1
+Written to: Images/Zoom/zImg_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.109019
+Number of times zoomed: 2
+Written to: Images/Zoom/zImg_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.432167
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0296829
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.108942
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.426813
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0281879
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.106783
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.42386
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0259144seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.107844seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.431149seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0246032seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 1.35517seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 1.6977seconds
+Number of times zoomed: 4
+Written to: 
+Image Dimensions: Width: 750 Height: 750
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 1
+Written to: 
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 2
+Written to: 
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 4
+Written to: 
+Image Dimensions: Width: 750 Height: 750
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 1
+Written to: 
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 2
+Written to: 
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.022292seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0996854seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.343387seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0220576seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0893004seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.357881seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0234178seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0868452seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.350511seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0225347seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0926009seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.35127seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0222641seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.807291seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.359372seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0227888seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.110258seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.409893seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0211343seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0950904seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.354853seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0220983seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.0853432seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.350024seconds
+Number of times zoomed: 4
+Written to: 
+Image Dimensions: Width: 750 Height: 750
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 1
+Written to: 
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 2
+Written to: 
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 4
+Written to: 
+Image Dimensions: Width: 750 Height: 750
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 1
+Written to: 
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 2
+Written to: 
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: -858993460
+Time taken to read Image: -9.25596e+61seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0223946seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 1.72368seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.339219seconds
+Number of times zoomed: 4
+Written to: Images/Zoom/zIMG_1.ppm
+Image Dimensions: Width: 750 Height: 750
+colour depth: 255
+Time taken to read Image: 0.0216925seconds
+Number of times zoomed: 1
+Written to: Images/Zoom/zIMG_2.ppm
+Image Dimensions: Width: 1500 Height: 1500
+colour depth: 255
+Time taken to read Image: 0.115369seconds
+Number of times zoomed: 2
+Written to: Images/Zoom/zIMG_3.ppm
+Image Dimensions: Width: 3000 Height: 3000
+colour depth: 255
+Time taken to read Image: 0.389882seconds
+Number of times zoomed: 4

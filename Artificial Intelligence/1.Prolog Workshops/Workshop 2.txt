@@ -1,0 +1,26 @@
+/**man(adam).
+woman(eve).
+
+man(adam) :- woman(eve).**/
+loves(romeo, juliet).
+
+loves(juliet, romeo) :- loves(romeo,juliet).
+
+man(adam).
+man(aristotle).
+man(jacob).
+man(oliver).
+
+car(ford,fiesta,popular,uk,950,hatchback,5300).
+car(ford,orion,gl,uk,1300,saloon,7800).
+car(ford,orion,gl,uk,1600,saloon,8600).
+car(ford,orion,ghia,uk,1600,saloon,9500).
+car(fiat,uno,55,italy,950,hatchback,5200).
+car(fiat,uno,70,italy,1050,hatchback,6500).
+car(rover,metro,city,uk,1000,hatchback,4900).
+car(rover,metro,mg,uk,1300,hatchback,5700). 
+
+supplier(ford,uk,'21 Tinsgate, Dagenham','081 233 4821').
+supplier(rover,uk,'18 Beadle Road, Cowley','0325 24112').
+supplier(fiat,italy,'333 Via Alphonse, Turin','0101 888
+376 3983'). 
